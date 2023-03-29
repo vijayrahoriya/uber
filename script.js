@@ -84,6 +84,8 @@ langEl.forEach(lang=> {
 
 modalClose.addEventListener('click', () => {
     mobileEl.style.zIndex = 999
+    mobileEl.classList.remove('active')
+    mobileShowIcon.classList.replace('fa-times','fa-bars')
     langModal.classList.remove('active')
     document.body.style.overflow = 'auto'
 })
